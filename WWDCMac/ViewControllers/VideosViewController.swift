@@ -27,6 +27,18 @@ class VideosViewController: NSViewController {
         
         sessions = JSONReader.sharedReader.sessionsInYear(a.tabView.selectedTabViewItem?.identifier as! Int)
         tableView.reloadData()
+        
+        if tableView.selectedRow < 0 {
+            tableView.selectRowIndexes(NSIndexSet(index: 0), byExtendingSelection: false)
+            
+            let session = sessions[0]
+            
+            NSNotificationCenter.defaultCenter().postNotificationName(
+                "SelectedSession",
+                object: nil,
+                userInfo: ["session": session]
+            )
+        }
     }
     
 }

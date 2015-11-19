@@ -13,7 +13,7 @@
                         <splitViewItem id="4R4-5Y-IUz"/>
                         <splitViewItem id="WjH-pf-S7A"/>
                     </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="vqA-dc-Y1k">
+                    <splitView key="splitView" autosaveName="SPLIT" dividerStyle="thin" vertical="YES" id="vqA-dc-Y1k">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -42,7 +42,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="44" rowSizeStyle="automatic" viewBased="YES" id="Vbc-8w-Pks">
-                                            <rect key="frame" x="0.0" y="0.0" width="448" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -133,7 +133,7 @@
             <objects>
                 <viewController id="b9d-Pf-UI3" customClass="SessionDetailViewController" customModule="WWDCMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="vTW-XK-z1t">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-ot-Irp">
@@ -174,7 +174,7 @@
                 </viewController>
                 <customObject id="rDb-jW-YLk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="644"/>
+            <point key="canvasLocation" x="937" y="718"/>
         </scene>
     </scenes>
 </document>

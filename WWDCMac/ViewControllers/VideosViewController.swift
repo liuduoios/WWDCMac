@@ -23,9 +23,15 @@ class VideosViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         
-        let a = NSApplication.sharedApplication().windows[0].contentViewController as! MainViewController
+        let mainViewController = NSApplication.sharedApplication().windows[0].contentViewController as! MainViewController
+        let identifier = mainViewController.tabView.selectedTabViewItem?.identifier as! String
         
-        sessions = JSONReader.sharedReader.sessionsInYear(a.tabView.selectedTabViewItem?.identifier as! Int)
+        if identifier == "Tech Talks 2013" {
+            sessions = JSONReader.sharedReader.techTalkSessions()
+        } else {
+            sessions = JSONReader.sharedReader.sessionsInYear(mainViewController.tabView.selectedTabViewItem?.identifier as! String)
+        }
+        
         tableView.reloadData()
         
         if tableView.selectedRow < 0 {

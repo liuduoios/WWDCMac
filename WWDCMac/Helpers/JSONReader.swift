@@ -38,9 +38,19 @@ class JSONReader {
         return results
     }
     
-    func sessionsInYear(year: Int) -> [Session] {
+    func sessionsInYear(year: String) -> [Session] {
         return self.sessions.filter { (session) -> Bool in
-            if session.conference! == "WWDC \(year)" {
+            if session.conference! == "\(year)" {
+                return true
+            } else {
+                return false
+            }
+        }
+    }
+    
+    func techTalkSessions() -> [Session] {
+        return self.sessions.filter { (session) -> Bool in
+            if session.conference! == "Tech Talks 2013" {
                 return true
             } else {
                 return false

@@ -22,7 +22,14 @@ class MainViewController: NSTabViewController {
     
     // MARK: - Private - Setup UI
     
-    private let years = [2015, 2014, 2013, 2012, 2011]
+    private let years = [
+        "WWDC 2015",
+        "WWDC 2014",
+        "WWDC 2013",
+        "WWDC 2012",
+        "WWDC 2011",
+        "Tech Talks 2013"
+    ]
     
     private func setupTabItems() {
         var items = [NSTabViewItem]()
@@ -33,7 +40,7 @@ class MainViewController: NSTabViewController {
             
             let item = NSTabViewItem(viewController: videoViewController)
             item.identifier = year
-            item.label = "WWDC\(year)"
+            item.label = "\(year)"
             
             items.append(item)
         }

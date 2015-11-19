@@ -95,9 +95,9 @@
 		86E81EBD1BFDA48900038F87 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				86E81EC41BFDA59200038F87 /* SessionDetailViewController.swift */,
-				86E81EC51BFDA59200038F87 /* VideosViewController.swift */,
 				86E81EC61BFDA59200038F87 /* MainViewController.swift */,
+				86E81EC51BFDA59200038F87 /* VideosViewController.swift */,
+				86E81EC41BFDA59200038F87 /* SessionDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

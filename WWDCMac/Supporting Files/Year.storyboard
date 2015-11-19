@@ -136,17 +136,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="550" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-ot-Irp">
-                                <rect key="frame" x="58" y="249" width="344" height="17"/>
-                                <animations/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="ffm-Ra-S6J">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8f-ZE-EE9">
-                                <rect key="frame" x="197" y="35" width="66" height="32"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g8f-ZE-EE9">
+                                <rect key="frame" x="242" y="13" width="66" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T2y-74-36q">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -156,19 +147,29 @@
                                     <action selector="play:" target="b9d-Pf-UI3" id="SnT-At-oxl"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-bR-BvN">
-                                <rect key="frame" x="36" y="201" width="66" height="32"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-ot-Irp">
+                                <rect key="frame" x="18" y="256" width="514" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="510" id="BfW-Wb-L5K"/>
+                                </constraints>
                                 <animations/>
-                                <buttonCell key="cell" type="push" title="关闭" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gZi-U2-BXd">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                </buttonCell>
-                            </button>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Keynote" id="ffm-Ra-S6J">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Zrr-ot-Irp" firstAttribute="top" secondItem="vTW-XK-z1t" secondAttribute="top" constant="20" id="6u8-X7-coq"/>
+                            <constraint firstItem="g8f-ZE-EE9" firstAttribute="centerX" secondItem="vTW-XK-z1t" secondAttribute="centerX" id="Cej-4T-cOf"/>
+                            <constraint firstAttribute="bottom" secondItem="g8f-ZE-EE9" secondAttribute="bottom" constant="20" symbolic="YES" id="PTO-GE-jaS"/>
+                            <constraint firstItem="Zrr-ot-Irp" firstAttribute="leading" secondItem="vTW-XK-z1t" secondAttribute="leading" constant="20" id="pwE-nn-ha3"/>
+                            <constraint firstAttribute="trailing" secondItem="Zrr-ot-Irp" secondAttribute="trailing" constant="20" id="yUp-QE-d4Z"/>
+                        </constraints>
                         <animations/>
                     </view>
                     <connections>
-                        <outlet property="closeButton" destination="EpD-bR-BvN" id="hcl-Cr-jbo"/>
                         <outlet property="titleField" destination="Zrr-ot-Irp" id="7Fd-2B-n9E"/>
                     </connections>
                 </viewController>

@@ -21,7 +21,7 @@ class SessionDetailViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-        closeButton.hidden = true
+//        closeButton.hidden = true
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleSelectedSessionNotification:", name: "SelectedSession", object: nil)
     }

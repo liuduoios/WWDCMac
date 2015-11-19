@@ -13,6 +13,7 @@ import AVFoundation
 class SessionDetailViewController: NSViewController {
 
     @IBOutlet weak var titleField: NSTextField!
+    @IBOutlet weak var summaryField: NSTextField!
     
     var session: Session?
     @IBOutlet weak var closeButton: NSButton!
@@ -31,6 +32,7 @@ class SessionDetailViewController: NSViewController {
         self.session = session
         
         titleField.stringValue = session.title!
+        summaryField.stringValue = session.description!
     }
     
     @IBAction func play(sender: AnyObject) {

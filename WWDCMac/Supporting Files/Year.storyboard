@@ -159,17 +159,33 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-XE-KaM">
+                                <rect key="frame" x="18" y="54" width="514" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="194" id="5sb-lk-non"/>
+                                </constraints>
+                                <animations/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="5NM-J2-iTQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Zrr-ot-Irp" firstAttribute="top" secondItem="vTW-XK-z1t" secondAttribute="top" constant="20" id="6u8-X7-coq"/>
                             <constraint firstItem="g8f-ZE-EE9" firstAttribute="centerX" secondItem="vTW-XK-z1t" secondAttribute="centerX" id="Cej-4T-cOf"/>
+                            <constraint firstItem="Haa-XE-KaM" firstAttribute="top" secondItem="Zrr-ot-Irp" secondAttribute="bottom" constant="8" id="K1c-RB-xFI"/>
                             <constraint firstAttribute="bottom" secondItem="g8f-ZE-EE9" secondAttribute="bottom" constant="20" symbolic="YES" id="PTO-GE-jaS"/>
+                            <constraint firstItem="Haa-XE-KaM" firstAttribute="leading" secondItem="vTW-XK-z1t" secondAttribute="leading" constant="20" id="Q7a-kV-Vg0"/>
+                            <constraint firstAttribute="trailing" secondItem="Haa-XE-KaM" secondAttribute="trailing" constant="20" id="SpC-X8-SbB"/>
                             <constraint firstItem="Zrr-ot-Irp" firstAttribute="leading" secondItem="vTW-XK-z1t" secondAttribute="leading" constant="20" id="pwE-nn-ha3"/>
                             <constraint firstAttribute="trailing" secondItem="Zrr-ot-Irp" secondAttribute="trailing" constant="20" id="yUp-QE-d4Z"/>
                         </constraints>
                         <animations/>
                     </view>
                     <connections>
+                        <outlet property="summaryField" destination="Haa-XE-KaM" id="KWr-ab-C65"/>
                         <outlet property="titleField" destination="Zrr-ot-Irp" id="7Fd-2B-n9E"/>
                     </connections>
                 </viewController>

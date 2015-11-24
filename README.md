@@ -13,4 +13,7 @@ A WWDC Mac client in Swift. You can watch all WWDC videos on it.
 <img style="width: 50%; height: 50%;" src="screenshot2.png" />
 
 ## TODO
-* Cache videos in local
+
+* [ ] Cache videos in local
+* [ ] Search
+* [ ] Video categories more explicit

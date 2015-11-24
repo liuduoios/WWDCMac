@@ -1,4 +1,4 @@
-# WWDCMAC
+# WWDCMac
 
 A WWDC Mac client in Swift. You can watch all WWDC videos on it.
 

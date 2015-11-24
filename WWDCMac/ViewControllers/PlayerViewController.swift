@@ -38,6 +38,9 @@ class PlayerViewController: NSViewController {
         playerView.layer?.zPosition = 0
         closeButton.layer?.zPosition = 1
         indicator.layer?.zPosition = 1
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleSelectedTabViewItemNotification:", name: "SelectedTabViewItem", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleSelectedSessionNotification:", name: "SelectedSessionClose", object: nil)
     }
     
     override func viewWillAppear() {
@@ -52,20 +55,35 @@ class PlayerViewController: NSViewController {
         super.viewDidAppear()
     }
     
+    @IBAction func closeButtonTapped(sender: AnyObject) {
+        destorySelf()
+    }
+    
+    private func destorySelf() {
+        closeButton?.removeFromSuperview()
+        playerView?.player?.pause()
+        playerView?.removeFromSuperview()
+        self.removeFromParentViewController()
+    }
+    
     override func mouseEntered(theEvent: NSEvent) {
-        print(__FUNCTION__)
         self.closeButton.hidden = false
         
     }
     
     override func mouseExited(theEvent: NSEvent) {
-        print(__FUNCTION__)
         self.closeButton.hidden = true
+    }    
+    
+    // ---------------------------
+    // MARK:- Notification Handler
+    // ---------------------------
+    
+    @objc private func handleSelectedTabViewItemNotification(notification: NSNotification) {
+        destorySelf()
     }
     
-    @IBAction func closeButtonTapped(sender: AnyObject) {
-        closeButton.removeFromSuperview()
-        playerView.player?.pause()
-        playerView.removeFromSuperview()
+    @objc private func handleSelectedSessionNotification(notification: NSNotification) {
+        destorySelf()
     }
 }

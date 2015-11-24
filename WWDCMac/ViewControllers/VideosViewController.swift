@@ -77,6 +77,11 @@ extension VideosViewController: NSTableViewDelegate {
             object: nil,
             userInfo: ["session": session]
         )
+        NSNotificationCenter.defaultCenter().postNotificationName(
+            "SelectedSessionClose",
+            object: nil,
+            userInfo: ["session": session]
+        )
         
         return true
     }

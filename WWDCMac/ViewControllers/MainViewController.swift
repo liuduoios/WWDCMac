@@ -51,8 +51,7 @@ class MainViewController: NSTabViewController {
     // MARK: - NSTabViewDelegate
     
     override func tabView(tabView: NSTabView, didSelectTabViewItem tabViewItem: NSTabViewItem?) {
-        guard let year = tabViewItem?.identifier else { return }
-        print(year)
+        NSNotificationCenter.defaultCenter().postNotificationName("SelectedTabViewItem", object: nil)
     }
     
 }

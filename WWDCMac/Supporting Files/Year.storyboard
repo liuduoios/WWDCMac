@@ -99,7 +99,7 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="p0Q-Ox-aHL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="998" constant="200" id="p0Q-Ox-aHL"/>
                                 </constraints>
                                 <animations/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="6yJ-qe-P27">
@@ -136,11 +136,11 @@
             <objects>
                 <viewController id="b9d-Pf-UI3" customClass="SessionDetailViewController" customModule="WWDCMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="vTW-XK-z1t">
-                        <rect key="frame" x="0.0" y="0.0" width="590" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="594" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g8f-ZE-EE9">
-                                <rect key="frame" x="262" y="13" width="66" height="32"/>
+                                <rect key="frame" x="264" y="13" width="66" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T2y-74-36q">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -150,26 +150,24 @@
                                     <action selector="play:" target="b9d-Pf-UI3" id="SnT-At-oxl"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-ot-Irp">
-                                <rect key="frame" x="18" y="256" width="554" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="550" id="BfW-Wb-L5K"/>
-                                </constraints>
-                                <animations/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Keynote" id="ffm-Ra-S6J">
-                                    <font key="font" metaFont="system" size="20"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-XE-KaM">
-                                <rect key="frame" x="18" y="54" width="554" height="194"/>
+                                <rect key="frame" x="18" y="54" width="558" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="194" id="5sb-lk-non"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="999" constant="554" id="WEM-8g-egW"/>
                                 </constraints>
                                 <animations/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="5NM-J2-iTQ">
                                     <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-ot-Irp">
+                                <rect key="frame" x="18" y="256" width="558" height="24"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Keynote" id="ffm-Ra-S6J">
+                                    <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

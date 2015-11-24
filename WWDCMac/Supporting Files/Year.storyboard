@@ -140,9 +140,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g8f-ZE-EE9">
-                                <rect key="frame" x="264" y="13" width="66" height="32"/>
+                                <rect key="frame" x="258" y="13" width="79" height="32"/>
                                 <animations/>
-                                <buttonCell key="cell" type="push" title="播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T2y-74-36q">
+                                <buttonCell key="cell" type="push" title="Watch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T2y-74-36q">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>

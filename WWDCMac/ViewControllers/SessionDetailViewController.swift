@@ -9,6 +9,7 @@
 import Cocoa
 import AVKit
 import AVFoundation
+import SnapKit
 
 class SessionDetailViewController: NSViewController {
 
@@ -22,8 +23,6 @@ class SessionDetailViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-//        closeButton.hidden = true
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleSelectedSessionNotification:", name: "SelectedSession", object: nil)
     }
     
@@ -36,16 +35,14 @@ class SessionDetailViewController: NSViewController {
     }
     
     @IBAction func play(sender: AnyObject) {
-        
-//        av.pre
         if let url = self.session?.video_url {
-            print(url)
-            let av = AVPlayerView(frame: self.view.bounds)
-            let player = AVPlayer(URL: NSURL(string: url)!)
-            av.player = player
-            player.play()
-            self.view.addSubview(av)
+            let playerViewController = PlayerViewController(url: url)
+            self.view.addSubview(playerViewController.view)
+            self.addChildViewController(playerViewController)
             
+            playerViewController.view.snp_makeConstraints(closure: { make in
+                make.edges.equalTo(self.view.snp_edges)
+            })
         }
     }
     

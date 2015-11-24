@@ -18,6 +18,8 @@
 		86E81EC91BFDA59200038F87 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E81EC61BFDA59200038F87 /* MainViewController.swift */; };
 		86E81ECB1BFDA59900038F87 /* VideoTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E81ECA1BFDA59900038F87 /* VideoTableCellView.swift */; };
 		86E81ECD1BFDA5AA00038F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E81ECC1BFDA5AA00038F87 /* Main.storyboard */; };
+		86E81ED41BFEF74900038F87 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E81ED21BFEF74900038F87 /* PlayerViewController.swift */; };
+		86E81ED51BFEF74900038F87 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86E81ED31BFEF74900038F87 /* PlayerViewController.xib */; };
 		AEEB553F122B2198F669B07B /* Pods_WWDCMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BA93C1D2A41DF458B64C73 /* Pods_WWDCMac.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		86E81EC61BFDA59200038F87 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		86E81ECA1BFDA59900038F87 /* VideoTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableCellView.swift; sourceTree = "<group>"; };
 		86E81ECC1BFDA5AA00038F87 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		86E81ED21BFEF74900038F87 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		86E81ED31BFEF74900038F87 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = ../ViewControllers/PlayerViewController.xib; sourceTree = "<group>"; };
 		BB4CC91675BEAAF99AE24DFE /* Pods-WWDCMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCMac/Pods-WWDCMac.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BA93C1D2A41DF458B64C73 /* Pods_WWDCMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDCMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 				86E81EC61BFDA59200038F87 /* MainViewController.swift */,
 				86E81EC51BFDA59200038F87 /* VideosViewController.swift */,
 				86E81EC41BFDA59200038F87 /* SessionDetailViewController.swift */,
+				86E81ED21BFEF74900038F87 /* PlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				86973CC01BFC6F85005B3888 /* Assets.xcassets */,
 				86E81ECC1BFDA5AA00038F87 /* Main.storyboard */,
 				86973CD31BFC789E005B3888 /* Year.storyboard */,
+				86E81ED31BFEF74900038F87 /* PlayerViewController.xib */,
 				86973CD71BFC7E51005B3888 /* videos.json */,
 				86973CC51BFC6F85005B3888 /* Info.plist */,
 			);
@@ -208,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86973CC11BFC6F85005B3888 /* Assets.xcassets in Resources */,
+				86E81ED51BFEF74900038F87 /* PlayerViewController.xib in Resources */,
 				86E81ECD1BFDA5AA00038F87 /* Main.storyboard in Resources */,
 				86973CD81BFC7E51005B3888 /* videos.json in Resources */,
 				86973CD41BFC789E005B3888 /* Year.storyboard in Resources */,
@@ -270,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E81EC81BFDA59200038F87 /* VideosViewController.swift in Sources */,
+				86E81ED41BFEF74900038F87 /* PlayerViewController.swift in Sources */,
 				86E81ECB1BFDA59900038F87 /* VideoTableCellView.swift in Sources */,
 				86973CDA1BFC7E65005B3888 /* JSONReader.swift in Sources */,
 				86973CBD1BFC6F85005B3888 /* AppDelegate.swift in Sources */,

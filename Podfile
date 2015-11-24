@@ -5,5 +5,7 @@ use_frameworks!
 
 target 'WWDCMac' do
 pod 'ObjectMapper', '~> 1.0'
+pod 'SnapKit', '~> 0.17.0'
+pod 'AsyncSwift', '~> 1.6.4'
 end
 

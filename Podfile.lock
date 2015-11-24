@@ -1,10 +1,16 @@
 PODS:
+  - AsyncSwift (1.6.4)
   - ObjectMapper (1.0.1)
+  - SnapKit (0.17.0)
 
 DEPENDENCIES:
+  - AsyncSwift (~> 1.6.4)
   - ObjectMapper (~> 1.0)
+  - SnapKit (~> 0.17.0)
 
 SPEC CHECKSUMS:
+  AsyncSwift: 3c90beed237324f1b57e1f1c414dc5501985d208
   ObjectMapper: 98524bac0dca46c6b3d5ee02cd410fc700ec6ce2
+  SnapKit: 49fd7b1b3ff58ab4064004036b8afcfddbd3a4bd
 
 COCOAPODS: 0.39.0
